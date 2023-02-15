@@ -1,0 +1,5 @@
+.vscode
+target/
+java/.gradle/
+java/bin/
+java/build/

@@ -1,0 +1,1 @@
+npx wasm2wat ./target/wasm32-wasi/release/main.wasm

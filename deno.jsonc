@@ -1,0 +1,10 @@
+{
+	"tasks": {
+		"build-wasi" : "cargo wasi build --release", //requires `cargo install wasi`
+		"deno-run" : "deno run --allow-all ./deno/app.ts",
+		"node-run" : "node --experimental-wasi-unstable-preview1 ./node/app.mjs",
+		"python-run" : "python ./python/app.py",
+		"wasmtime-run" : "wasmtime ./target/wasm32-wasi/release/main.wasm",
+		"java-run" : "./gradelw -Pmain=App app.run"
+	} 
+}

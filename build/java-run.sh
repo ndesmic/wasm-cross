@@ -1,0 +1,1 @@
+./gradlew -Pmain=examples.HelloWorld examples:run
