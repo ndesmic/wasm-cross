@@ -3,6 +3,7 @@
 		"build-wasi" : "cargo wasi build --release", //requires `cargo install wasi`
 		"deno-run" : "deno run --allow-all ./deno/app.ts",
 		"node-run" : "node --experimental-wasi-unstable-preview1 ./node/app.mjs",
+		"browser-run" : "deno run https://deno.land/std@0.177.0/http/file_server.ts",
 		"python-run" : "python ./python/app.py",
 		"wasmtime-run" : "wasmtime ./target/wasm32-wasi/release/main.wasm",
 		"java-run" : "./gradelw -Pmain=App app.run"
