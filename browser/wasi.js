@@ -14,7 +14,7 @@ export class Wasi {
 		this.bind();
 	}
 
-	 //really annoying the interface works this way but we need to set after the instanciation which requires this class
+	 //really annoying the interface works this way but we MUST set the instance after creating it with the WASI class as an import in order to access it's memory
 	set instance(val) {
 		this.#instance = val;
 	}
