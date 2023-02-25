@@ -7,6 +7,8 @@ pub fn main() -> io::Result<()> {
 
     let foo_var = env::var("FOO").unwrap_or("[foo]".to_string());
 
-    println!("Hello {} {}", buffer, foo_var);
+    let args: Vec<String> = env::args().collect();
+
+    println!("Hello World! stdin: {}, env: {}, args: {}", buffer, foo_var, &args[0]);
     Ok(())
 }
